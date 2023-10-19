@@ -28,7 +28,6 @@
 
   <body>
     <main>
-      <!-- page content start-->
       <div class="content">
         <img
           class="content-image-mobile"
@@ -62,8 +61,13 @@
             </li>
           </ul>
           <!-- form starts -->
-          <form action="#" class="form">
-            <label class="input-label" for="email">Email address:</label>
+          <form action="#" class="form" novalidate>
+            <div class="label-container">
+              <label class="input-label" for="email">Email address:</label>
+              <label class="input-label-invalid" for="email"
+                >Valid email required</label
+              >
+            </div>
             <input
               class="form-input"
               type="email"
@@ -84,6 +88,22 @@
           alt=""
         />
       </div>
+      <div class="thanks-page">
+        <div class="thanks-page-content">
+          <img
+            class="thanks-image"
+            src="./assets/images/icon-success.svg"
+            alt=""
+          />
+          <h1 class="title thanks-title">Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <span class="email"></span>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+          <button class="form-button thanks-button">Dismiss message</button>
+        </div>
+      </div>
 
       <!-- <div class="attribution">
         Challenge by
@@ -93,5 +113,6 @@
       </div> -->
       <!-- page content ends -->
     </main>
+    <script src="./validation.js"></script>
   </body>
 </html>

@@ -11,3 +11,42 @@
 .text-content {
   margin: 40px 24px 0 24px;
 }
+
+.form-input,
+.form-button,
+.form-input-invalid {
+  width: 327px;
+}
+
+.thanks-page {
+  display: none;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.thanks-page-content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.thanks-image {
+  width: 64px;
+  height: 64px;
+  margin: 149px 0 40px 24px;
+}
+
+.thanks-title {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.thanks-page-content p {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.thanks-button {
+  margin: 263px 24px 40px 24px;
+}
