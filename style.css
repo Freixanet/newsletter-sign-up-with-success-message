@@ -1,3 +1,19 @@
+:root {
+  --main-color: hsl(234, 29%, 20%);
+  --highlight-color: hsl(0, 0%, 100%);
+  --border-color: rgba(128, 128, 128, 0.25);
+  --button-bg-color: hsl(234, 29%, 20%);
+  --button-text-color: hsl(0, 0%, 100%);
+  --button-hover-bg: var(
+    --Gradient-1,
+    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
+  );
+  --button-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  --invalid-input-bg: rgba(255, 97, 85, 0.15);
+  --invalid-input-placeholder: var(--Vermellion, #ff6155);
+  --label-text-color: var(--Vermellion, #ff6155);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -6,8 +22,8 @@
 }
 
 .content {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(234, 29%, 20%);
+  background-color: var(--highlight-color);
+  color: var(--main-color);
   font-weight: 400;
   display: flex;
   font-family: "Roboto", sans-serif;
@@ -49,15 +65,15 @@
   width: 376px;
   padding-left: 24px;
   border-radius: 8px;
-  border: 1px solid rgba(128, 128, 128, 0.25);
+  border: 1px solid var(--border-color);
 }
 
 .form-input:active {
-  border: 1px solid var(--Dark-Navy, #242742);
+  border: 1px solid var(--main-color);
 }
 
 .form-input::placeholder {
-  color: hsl(234, 29%, 20%);
+  color: var(--main-color);
   opacity: 50%;
   font-size: 16px;
   margin-bottom: 8px;
@@ -67,12 +83,12 @@
   height: 56px;
   padding-left: 24px;
   border-radius: 8px;
-  border: 1px solid var(--Vermellion, #ff6155);
-  background-color: rgba(255, 97, 85, 0.15);
+  border: 1px solid var(--invalid-input-placeholder);
+  background-color: var(--invalid-input-bg);
 }
 
 .form-input-invalid::placeholder {
-  color: var(--Vermellion, #ff6155);
+  color: var(--invalid-input-placeholder);
   opacity: 50%;
   font-size: 16px;
   margin-bottom: 8px;
@@ -95,15 +111,15 @@
   font-weight: 700;
   margin-bottom: 8px;
   font-size: 12px;
-  color: var(--Vermellion, #ff6155);
+  color: var(--invalid-input-placeholder);
 }
 
 .form-button {
   cursor: pointer;
   margin-top: 24px;
   margin-bottom: 40px;
-  background-color: hsl(234, 29%, 20%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   height: 56px;
   border-radius: 8px;
   border: none;
@@ -114,17 +130,14 @@
 }
 
 .form-button:active {
-  background: var(
-    --Gradient-1,
-    linear-gradient(204deg, #ff6a3a 0%, #ff527b 100%)
-  );
-  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  background: var(--button-hover-bg);
+  box-shadow: var(--button-shadow);
 }
 
 .thanks-page {
   display: none;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(234, 29%, 20%);
+  background-color: var(--highlight-color);
+  color: var(--main-color);
   font-weight: 400;
   display: flex;
   font-family: "Roboto", sans-serif;

@@ -20,8 +20,8 @@
 
 .thanks-page {
   display: none;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(234, 29%, 20%);
+  background-color: var(--highlight-color);
+  color: var(--main-color);
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
@@ -29,24 +29,16 @@
 .thanks-page-content {
   display: flex;
   flex-flow: column nowrap;
+  justify-items: center;
+  padding: 149px 24px 40px 24px;
 }
 
 .thanks-image {
   width: 64px;
   height: 64px;
-  margin: 149px 0 40px 24px;
-}
-
-.thanks-title {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-.thanks-page-content p {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 0 40px 0;
 }
 
 .thanks-button {
-  margin: 263px 24px 40px 24px;
+  margin-top: 263px;
 }
