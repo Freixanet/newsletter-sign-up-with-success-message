@@ -3,7 +3,7 @@ main {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: var(--main-color); /* Reemplazado por la variable */
+  background-color: var(--main-color);
 }
 
 .content {
@@ -58,4 +58,5 @@ main {
 
 .thanks-button {
   margin-top: 0;
+  width: 375px;
 }

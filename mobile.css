@@ -2,12 +2,10 @@
   min-width: 375px;
   height: 100vh;
   flex-flow: column nowrap;
-  justify-content: center;
-  padding: 0 auto 0 auto;
 }
 
 .content-image-mobile {
-  margin: 0 auto 0 auto;
+  min-width: 375px;
 }
 
 .content-image-desktop {
@@ -18,18 +16,21 @@
   display: flex;
   margin: 40px auto;
   padding: 0 24px 0 24px;
-  width: 375px;
+  min-width: 375px;
 }
 
 .form {
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  min-width: 375px;
 }
 
 .form-input,
 .form-button,
 .form-input-invalid {
-  width: 327px;
+  min-width: 327px;
 }
 
 .thanks-page {
@@ -49,7 +50,7 @@
   flex-flow: column nowrap;
   justify-items: center;
   margin: 0 auto 0 auto;
-  width: 327px;
+  min-width: 327px;
 }
 
 .thanks-image {
