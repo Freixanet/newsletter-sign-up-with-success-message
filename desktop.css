@@ -31,6 +31,13 @@ main {
   font-size: 56px;
 }
 
+.form-button {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  height: 56px;
+  width: 375px;
+}
+
 .thanks-page {
   display: none;
   flex-flow: column nowrap;
