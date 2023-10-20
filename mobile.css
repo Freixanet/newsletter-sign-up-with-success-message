@@ -5,7 +5,7 @@
 }
 
 .content-image-mobile {
-  min-width: 375px;
+  width: 100%;
 }
 
 .content-image-desktop {
