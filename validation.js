@@ -1,3 +1,4 @@
+// Variables
 const form = document.querySelector(".form");
 const input = document.querySelector(".form-input");
 const emailSpan = document.querySelector(".email");
@@ -5,18 +6,7 @@ const thanksPage = document.querySelector(".thanks-page");
 const content = document.querySelector(".content");
 const dismissButton = document.querySelector(".thanks-button");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); // Previene la presentación del formulario por defecto
-
-  const email = input.value;
-
-  if (formValidation(email)) {
-    content.style.display = "none";
-    thanksPage.style.display = "flex";
-    emailSpan.textContent = email;
-  }
-});
-
+// Functions
 function formValidation() {
   const email = document.querySelector(".form-input").value;
   let hasErrors = false;
@@ -38,8 +28,21 @@ function formValidation() {
 }
 
 function showInitialContent() {
-  content.style.display = "initial";
+  content.style.display = "flex";
   thanksPage.style.display = "none";
 }
+
+// Event Listeners
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Previene la presentación del formulario por defecto
+
+  const email = input.value;
+
+  if (formValidation(email)) {
+    content.style.display = "none";
+    thanksPage.style.display = "flex";
+    emailSpan.textContent = email;
+  }
+});
 
 dismissButton.addEventListener("click", showInitialContent);
